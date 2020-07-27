@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import TextMessage from './TextMessage';
 import FileMessage from './FileMessage';
+import ListMessage from './ListMessage';
+import LinkMessage from './LinkMessage';
 import chatIconUrl from '../assets/chat-icon.svg';
 import styles from '../styles/message.less';
 
@@ -13,6 +15,10 @@ class Message extends Component<IMessageProps> {
     switch (type) {
       case 'text':
         return <TextMessage {...this.props.message} />;
+      case 'list':
+        return <ListMessage {...this.props.message} />;
+      case 'link':
+        return <LinkMessage {...this.props.message} />;
       // case 'emoji':
       //   return <EmojiMessage {...this.props.message} />;
       case 'file':
@@ -49,10 +55,9 @@ class Message extends Component<IMessageProps> {
               ? (
                 <div
                   className={styles['sc-message--avatar']}
-                  style={{
-                    backgroundImage: `url(${chatIconUrl})`,
-                  }}
-                />
+                >
+                  我
+                </div>
               )
               : null
           }

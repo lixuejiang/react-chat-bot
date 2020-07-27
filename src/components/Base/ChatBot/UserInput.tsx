@@ -61,12 +61,12 @@ class UserInput extends Component<IUserInputProps, IUserInputState> {
     } = this.state;
     return (
       <form className={`${styles['sc-user-input']} ${(inputActive ? styles.active : '')}`}>
-        <input
+        <textarea
           value={inputText}
           onFocus={() => { this.setState({ inputActive: true }); }}
           onBlur={() => { this.setState({ inputActive: false }); }}
           onKeyDown={this.handleKeyDown.bind(this)}
-          placeholder="Write a reply..."
+          placeholder="请用一句话来描述你的问题吧"
           onChange={this.handleInputChange}
           className={styles['sc-user-input--text']}
         />

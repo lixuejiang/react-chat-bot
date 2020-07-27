@@ -19,6 +19,8 @@ const messageHistory = [
   { type: 'text', author: 'them', data: { text: 'No story?' } },
   { type: 'text', author: 'me', data: { text: 'No forget the story. ' } },
   { type: 'text', author: 'them', data: { text: "You've got to have a story." } },
+  { type: 'list', author: 'them', data: { text: "You've got to have a story." } },
+  { type: 'link', author: 'them', data: { text: "You've got to have a story." } },
   // {
   //   type: 'file', author: 'me',
   //   data: {
