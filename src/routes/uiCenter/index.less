@@ -1,0 +1,116 @@
+.container {
+  position: relative;
+  height: 100%;
+  .wrap {
+    .menus {
+      border-right: 1px solid rgba(0,0,0,0.15);
+      // padding: 16px 0;
+      .items {
+        &:first-child {
+          margin-top: 16px;
+        }
+        &:last-child {
+          margin-bottom: 16px;
+        }
+        h3 {
+          margin: 0;
+          padding: 0;
+          padding: 8px 16px 8px 16px;
+          color: rgba(0,0,0,0.45);
+          font-size: 14px;
+        }
+        .item {
+          display: block;
+          color: rgba(0,0,0,0.85);
+          padding: 0 16px 0 32px;
+          font-size: 14px;
+          text-overflow: ellipsis;
+          height: 40px;
+          line-height: 40px;
+          transition: all .3s;
+          &:hover {
+            color: #4285F4;
+            background: rgba(0,0,0,.05);
+            .name {
+              color: #4285F4;
+            }
+          }
+          .name {
+            color: rgba(0,0,0,0.45);
+            transition: all .3s;
+            margin-left: 8px;
+            font-size: 12px;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+  }
+}
+
+.page {
+  .wrap {
+    padding: 24px 0;
+    h3 {
+      margin: 0;
+      padding: 0;
+      font-size: 24px;
+      line-height: 32px;
+      font-weight: 500;
+    }
+    .row {
+      margin: 16px 0;
+      font-size: 0;
+    }
+    .col {
+      display: inline-block;
+      font-size: 16px;
+      line-height: 24px;
+      vertical-align: top;
+      &.icon {
+        width: 160px;
+        height: 100px;
+        padding-top: 6px;
+        margin: 3px;
+        text-align: center;
+        vertical-align: middle;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: all .3s;
+        &:hover {
+          background: rgba(0,0,0,.05);
+        }
+        svg {
+          font-size: 36px;
+          margin: 12px 0 8px;
+          display: inline-block;
+        }
+        span {
+          font-size: 14px;
+          display: block;
+        }
+      }
+    }
+    .block {
+      width: 100px;
+      height: 100px;
+      line-height: 100px;
+      text-align: center;
+      font-size: 16px;
+      color: #fff;
+      border-radius: 2px;
+    }
+    .color {
+      width: 24px;
+      height: 24px;
+      border-radius: 24px;
+    }
+  }
+}
+
+.copied {
+  padding: 2px 4px 2px;
+  font-size: 12px;
+  background: #f5f5f5;
+  border-radius: 2px;
+}

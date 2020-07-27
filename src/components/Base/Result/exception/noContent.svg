@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="120px" height="100px" viewBox="0 0 120 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>ic_4</title>
+    <desc>Created with Sketch.</desc>
+    <g id="ic_4" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-4" transform="translate(0.000000, 1.000000)">
+            <g id="Group-5-Copy-2">
+                <g id="Group">
+                    <path d="M105.917064,88.0650212 C106.276723,88.0618905 106.287756,87.5302456 106.469682,87.2603375 C112.487321,78.332468 116,67.5764491 116,56 C116,25.072054 90.927946,0 60,0 C29.072054,0 4,25.072054 4,56 C4,67.3915424 7.40136174,77.9886542 13.2438867,86.831137 C13.5513915,87.296536 13.5520613,88.1779204 14.1865481,88.2126124 C46.8764058,90 88.9613478,88.2126124 105.917064,88.0650212 Z" id="Oval" fill="#F2F9FF"></path>
+                    <path d="M17.2200813,14.3963157 C19.9360877,14.8101088 21.6027544,15.8101088 22.2200813,17.3963157 C23.3417258,15.8101088 25.0083924,14.8101088 27.2200813,14.3963157" id="Line-6" stroke="#4D7BB3" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" transform="translate(22.220081, 15.896316) rotate(-17.000000) translate(-22.220081, -15.896316) "></path>
+                    <path d="M27.2200813,18.3963157 C29.9360877,18.8101088 31.6027544,19.8101088 32.2200813,21.3963157 C33.3417258,19.8101088 35.0083924,18.8101088 37.2200813,18.3963157" id="Line-6-Copy" stroke="#4D7BB3" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" transform="translate(32.220081, 19.896316) rotate(-17.000000) translate(-32.220081, -19.896316) "></path>
+                    <path d="M18,88 L106.281381,88" id="Line-2" stroke="#4D7BB3" stroke-width="2" opacity="0.5" stroke-linecap="round"></path>
+                    <path d="M0.811775674,88 L14,88" id="Line-2-Copy" stroke="#4D7BB3" stroke-width="2" opacity="0.5" stroke-linecap="round"></path>
+                    <path d="M109.811776,88 L119.74553,88" id="Line-2-Copy-2" stroke="#4D7BB3" stroke-width="2" opacity="0.5" stroke-linecap="round"></path>
+                    <path d="M26.8117757,98 L33.1515974,98" id="Line-2-Copy-4" stroke="#4D7BB3" stroke-width="2" opacity="0.5" stroke-linecap="round"></path>
+                    <path d="M37.8117757,98 L48.1841026,98 C49.3193341,96.4287493 50.4187667,95.643124 51.4824001,95.643124 C52.5460336,95.643124 53.5745585,96.4287493 54.5679749,98 L70,98" id="Line-2-Copy-6" stroke="#4D7BB3" stroke-width="2" opacity="0.5" stroke-linecap="round"></path>
+                    <path d="M81.8117757,98 L88.1515974,98" id="Line-2-Copy-5" stroke="#4D7BB3" stroke-width="2" opacity="0.5" stroke-linecap="round"></path>
+                </g>
+            </g>
+            <rect id="Rectangle" stroke="#5E8DC6" stroke-width="2" fill="#FFFFFF" x="21" y="34" width="78" height="54"></rect>
+            <path d="M21,46 L99,46 L99,37 C99,35.3431458 97.6568542,34 96,34 L24,34 C22.3431458,34 21,35.3431458 21,37 L21,46 Z" id="Rectangle" stroke="#5E8DC6" stroke-width="2" fill="#E3F1FF"></path>
+            <rect id="Rectangle" fill="#6DAAFD" x="25" y="38" width="4" height="4" rx="1"></rect>
+            <rect id="Rectangle-Copy-4" fill="#6DAAFD" x="32" y="38" width="4" height="4" rx="1"></rect>
+            <rect id="Rectangle-Copy-5" fill="#6DAAFD" x="39" y="38" width="4" height="4" rx="1"></rect>
+            <rect id="Rectangle" fill="#E3F1FF" x="27" y="51" width="66" height="8"></rect>
+            <rect id="Rectangle-Copy-6" fill="#E3F1FF" x="27" y="75" width="66" height="8"></rect>
+            <rect id="Rectangle-Copy-7" fill="#E3F1FF" x="27" y="63" width="10" height="8"></rect>
+            <rect id="Rectangle-Copy-8" fill="#E3F1FF" x="41" y="63" width="52" height="8"></rect>
+        </g>
+    </g>
+</svg>

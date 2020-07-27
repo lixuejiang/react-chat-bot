@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53 (72520) - https://sketchapp.com -->
+    <title>Group 2</title>
+    <desc>Created with Sketch.</desc>
+    <g id="设计稿-10.09" stroke="#4285F4" stroke-width="1">
+        <g id="选题板-写字板发布" transform="translate(-1014.000000, -106.000000)">
+            <!-- <rect fill="#FFFFFF" x="0" y="0" width="1280" height="720"></rect> -->
+            <g id="Group-2" transform="translate(1014.000000, 106.000000)">
+                <!-- <circle id="Oval"  cx="10" cy="10" r="8"></circle> -->
+                <circle id="Oval" cx="10" cy="10" r="9"></circle>
+                <polyline id="Path-5" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" points="6 10.60024691 8.65628052 13.2 14.1530308 7.24091269"></polyline>
+            </g>
+        </g>
+    </g>
+</svg>

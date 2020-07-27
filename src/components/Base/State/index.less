@@ -1,0 +1,36 @@
+@import '../Less/theme.less';
+
+.container {
+  text-align: center;
+  .icon {
+    text-align: center;
+    &>:global(.anticon) {
+      font-size: 50px;
+      &:global(.anticon-check-circle) {
+        color: @success-color;
+      }
+      &:global(.anticon-close-circle) {
+        color: @error-color;
+      }
+      &:global(.anticon-exclamation-circle) {
+        color: @info-color;
+      }
+      &:global(.anticon-warning) {
+        color: @warning-color;
+      }
+    }
+  }
+  .title {
+    margin-top: 24px;
+    font-size: 20px;
+    line-height: 26px;
+    color: @titleColor;
+    font-weight: @semibold;
+  }
+  .subTitle {
+    margin-top: 8px;
+    font-size: 14px;
+    line-height: 20px;
+    color: @subTextColor;
+  }
+}

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="82px" height="67px" viewBox="0 0 82 67" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 37</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="060" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="3.项目尺寸选择" transform="translate(-799.000000, -352.000000)">
+            <g id="Group-4" transform="translate(465.000000, 259.000000)">
+                <g id="Group-37" transform="translate(335.000000, 93.000000)">
+                    <g id="Group-5-Copy-3">
+                        <g id="Group">
+                            <path d="M72.6113758,58.7100141 C72.8511484,58.707927 72.8585039,58.3534971 72.9797877,58.1735584 C76.9915472,52.2216453 79.3333333,45.0509661 79.3333333,37.3333333 C79.3333333,16.7147027 62.6186307,0 42,0 C21.3813693,0 4.66666667,16.7147027 4.66666667,37.3333333 C4.66666667,44.9276949 6.93424116,51.9924362 10.8292578,57.8874247 C11.034261,58.1976907 11.0347075,58.7852803 11.4576988,58.8084082 C33.2509372,60 61.3075652,58.8084082 72.6113758,58.7100141 Z" id="Oval" fill="#F2F9FF"></path>
+                            <path d="M17.4800542,7.59754377 C19.2907251,7.87340584 20.4018363,8.54007251 20.8133876,9.59754377 C21.5611505,8.54007251 22.6722616,7.87340584 24.1467209,7.59754377" id="Line-6" stroke="#4D7BB3" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" transform="translate(20.813388, 8.597544) rotate(-17.000000) translate(-20.813388, -8.597544) "></path>
+                            <path d="M13.4800542,13.5975438 C15.2907251,13.8734058 16.4018363,14.5400725 16.8133876,15.5975438 C17.5611505,14.5400725 18.6722616,13.8734058 20.1467209,13.5975438" id="Line-6-Copy" stroke="#4D7BB3" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" transform="translate(16.813388, 14.597544) rotate(-17.000000) translate(-16.813388, -14.597544) "></path>
+                            <path d="M12,58.6666667 L70.8542538,58.6666667" id="Line-2" stroke="#4D7BB3" stroke-width="2" opacity="0.5" stroke-linecap="round"></path>
+                            <path d="M0.541183783,58.6666667 L9.33333333,58.6666667" id="Line-2-Copy" stroke="#4D7BB3" stroke-width="2" opacity="0.5" stroke-linecap="round"></path>
+                            <path d="M73.2078504,58.6666667 L79.8303532,58.6666667" id="Line-2-Copy-2" stroke="#4D7BB3" stroke-width="2" opacity="0.5" stroke-linecap="round"></path>
+                            <path d="M19.8745171,65.3333333 L24.1010649,65.3333333" id="Line-2-Copy-4" stroke="#4D7BB3" stroke-width="2" opacity="0.5" stroke-linecap="round"></path>
+                            <path d="M27.2078504,65.3333333 L34.122735,65.3333333 C34.8795561,64.2858329 35.6125111,63.7620827 36.3216001,63.7620827 C37.0306891,63.7620827 37.7163724,64.2858329 38.3786499,65.3333333 L48.6666667,65.3333333" id="Line-2-Copy-6" stroke="#4D7BB3" stroke-width="2" opacity="0.5" stroke-linecap="round"></path>
+                            <path d="M56.5411838,65.3333333 L60.7677316,65.3333333" id="Line-2-Copy-5" stroke="#4D7BB3" stroke-width="2" opacity="0.5" stroke-linecap="round"></path>
+                        </g>
+                        <g id="Group-2" transform="translate(42.000000, 37.333333) rotate(-270.000000) translate(-42.000000, -37.333333) translate(20.000000, 23.666667)">
+                            <rect id="Rectangle" stroke="#5695E1" stroke-width="2" fill="#FFFFFF" x="1" y="1" width="42" height="25.3333333" rx="3"></rect>
+                            <rect id="Rectangle" fill="#E3F1FF" x="5.33333333" y="3.33333333" width="32" height="20.6666667" rx="1"></rect>
+                            <circle id="Oval" fill="#9FBAD9" cx="40" cy="14" r="2"></circle>
+                        </g>
+                    </g>
+                    <g id="Group-3" transform="translate(37.333333, 18.000000)" fill="#9FBAD9">
+                        <circle id="Oval" cx="0.666666667" cy="0.666666667" r="1"></circle>
+                        <rect id="Rectangle" x="2.66666667" y="0" width="6.66666667" height="1.33333333" rx="0.666666667"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

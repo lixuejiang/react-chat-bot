@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="220px" height="103px" viewBox="0 0 220 103" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>EmptyState</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-0.3%" y="-0.6%" width="100.6%" height="101.3%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.15 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="设计稿-10.09" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="生产力传播-空" transform="translate(-530.000000, -1044.000000)">
+            <g id="编组-4" filter="url(#filter-1)" transform="translate(24.000000, 729.000000)">
+                <g id="Card---Error" transform="translate(491.000000, 274.000000)">
+                    <g id="Error">
+                        <path d="M136,64 C139.865993,64 143,67.1340068 143,71 C143,74.8659932 139.865993,78 136,78 L200,78 C203.865993,78 207,81.1340068 207,85 C207,88.8659932 203.865993,92 200,92 L222,92 C225.865993,92 229,95.1340068 229,99 C229,102.865993 225.865993,106 222,106 L203,106 C199.134007,106 196,109.134007 196,113 C196,116.865993 199.134007,120 203,120 L209,120 C212.865993,120 216,123.134007 216,127 C216,130.865993 212.865993,134 209,134 L63,134 C59.1340068,134 56,130.865993 56,127 C56,123.134007 59.1340068,120 63,120 L24,120 C20.1340068,120 17,116.865993 17,113 C17,109.134007 20.1340068,106 24,106 L64,106 C67.8659932,106 71,102.865993 71,99 C71,95.1340068 67.8659932,92 64,92 L39,92 C35.1340068,92 32,88.8659932 32,85 C32,81.1340068 35.1340068,78 39,78 L79,78 C75.1340068,78 72,74.8659932 72,71 C72,67.1340068 75.1340068,64 79,64 L136,64 Z M226,120 C229.865993,120 233,123.134007 233,127 C233,130.865993 229.865993,134 226,134 C222.134007,134 219,130.865993 219,127 C219,123.134007 222.134007,120 226,120 Z" id="Background" fill="#E8F4FF" fill-rule="evenodd"></path>
+                        <path d="M92,140 C79.8497355,140 70,130.374122 70,118.5 C70,106.625878 79.8497355,97 92,97 C92.516677,97 93.029194,97.0174063 93.5369705,97.0516517 C93.1841654,95.087799 93,93.0654066 93,91 C93,72.2223185 108.222319,57 127,57 C141.991043,57 154.716066,66.7019845 159.238615,80.1694983 C160.310147,80.0574596 161.398251,80 162.5,80 C179.344685,80 193,93.4314575 193,110 C193,125.740609 180.675305,138.727337 165,139.978185 L165,140 L108.507812,140 M103.995972,140 L97.0313721,140" id="Shape" stroke="#2584D6" stroke-width="2.5" fill="#FFFFFF" fill-rule="evenodd" stroke-linecap="round"></path>
+                        <circle id="Oval" stroke="#2584D6" stroke-width="2.5" cx="127.5" cy="120.5" r="5.5"></circle>
+                        <polyline id="Line" stroke="#2584D6" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" points="112 109 119 103.506836 112 98.2775821"></polyline>
+                        <polyline id="Line" stroke="#2584D6" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" transform="translate(139.500000, 103.638791) scale(-1, 1) translate(-139.500000, -103.638791) " points="136 109 143 103.506836 136 98.2775821"></polyline>
+                        <path d="M150.440285,67 C143.931394,68.7225775 138.79208,73.8128579 137,80.2931851" id="Oval" stroke="#5FACEF" stroke-width="2.5" stroke-linecap="round" transform="translate(143.720142, 73.646593) scale(-1, 1) translate(-143.720142, -73.646593) "></path>
+                        <circle id="Oval" stroke="#5FACEF" stroke-width="2" cx="158" cy="47" r="3"></circle>
+                        <circle id="Oval" fill="#5FACEF" fill-rule="evenodd" cx="189" cy="63" r="3"></circle>
+                        <path d="M174.242641,57.7573593 L165.884418,66.1155824 M165.757359,57.7573593 L174.115582,66.1155824" id="Line-5" stroke="#5FACEF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M77.4038059,75.5961941 L71.4038059,81.5961941 M71.4038059,75.5961941 L77.4038059,81.5961941" id="Line-4" stroke="#5FACEF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <circle id="Oval" fill="#5FACEF" fill-rule="evenodd" cx="85" cy="66" r="3"></circle>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

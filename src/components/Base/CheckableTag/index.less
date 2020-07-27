@@ -1,0 +1,115 @@
+@import '../Less/theme.less';
+
+.container {
+  padding: 8px 0;
+  &.needLabel {
+    .value {
+      margin-left: -84px;
+      padding-left: 84px;
+    }
+  }
+  &.stress {
+    .value {
+      .tags {
+        .tag {
+          color: @subTextColor;
+          &:hover {
+            color: @titleColor;
+          }
+          &.checked {
+            font-weight: @semibold;
+            color: @titleColor;
+            background-color: initial;
+          }
+        }
+      }
+    }
+  }
+  .label {
+    width: 72px;
+    margin-right: 12px;
+    display: inline-block;
+    vertical-align: top;
+    color: @subTextColor;
+    text-align: right;
+    line-height: 21px;
+    font-size: 14px;
+    padding: 2px 0;
+  }
+  .value {
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    font-size: 0;
+    .tags {
+      width: 100%;
+      margin: -2px -4px;
+      padding: 2px 0;
+      &.needCollapsed {
+        padding-right: 55px;
+        margin-right: -55px;
+        display: inline-block;
+        &.collapsed {
+          height: 25px;
+          overflow: hidden;
+        }
+      }
+      .tag {
+        display: inline-block;
+        vertical-align: top;
+        font-size: 14px;
+        padding: 0 5px;
+        user-select: none;
+        cursor: pointer;
+        color: @textColor;
+        font-weight: @regular;
+        transition: color .3s, background-color .3s;
+        border-radius: 2px;
+        margin: 2px 4px;
+        &:hover {
+          color: @primaryColor;
+        }
+        &>i {
+          margin-left: 4px;
+          font-size: 12px;
+          display: none;
+        }
+        &.checked {
+          color: @primaryColor;
+          background-color: rgba(66, 133, 244, 0.2);
+          &>i {
+            display: inline-block;
+          }
+        }
+        &.collapsedBtn {
+          color: @primaryColor;
+          i {
+            margin-left: 2px;
+            display: inline-block;
+            font-size: 14px;
+          }
+          &:hover {
+            color: @primaryHoverColor;
+          }
+        }
+      }
+    }
+    .collapsedBtn {
+      font-size: 14px;
+      display: inline-block;
+      vertical-align: top;
+      color: @primaryColor;
+      user-select: none;
+      cursor: pointer;
+      font-weight: @regular;
+      transition: color .3s, background-color .3s;
+      margin: 2px 0;
+      i {
+        margin-left: 2px;
+      }
+      &:hover {
+        color: @primaryHoverColor;
+      }
+    }
+  }
+}

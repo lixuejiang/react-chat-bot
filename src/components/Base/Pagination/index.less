@@ -1,0 +1,11 @@
+.container {
+  text-align: right;
+  padding: 40px 0;
+  &.hideOnLastPage {
+    :global(.ant-pagination-jump-next) {
+      &+:global(.ant-pagination-item) {
+        display: none;
+      }
+    }
+  }
+}

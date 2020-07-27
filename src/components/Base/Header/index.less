@@ -1,0 +1,71 @@
+@import '../Less/theme.less';
+
+.container {
+  .main {
+    display: flex;
+    border-bottom: 1px solid transparent;
+
+    &.border {
+      border-bottom-color: @lineColor;
+    }
+    .back {
+      display: block;
+      height: 22px;
+      margin: 16px 10px 17px 0;
+      cursor: pointer;
+      svg {
+        font-size: 22px;
+      }
+    }
+    .title {
+      word-break: keep-all;
+      white-space: nowrap;
+      font-weight: 600;
+      color: @titleColor;
+      font-size: 18px;
+      line-height: 28px;
+      padding: 14px 0;
+    }
+    .titlePanel {
+      padding: 14px 0 12px 0;
+      .title {
+        word-break: keep-all;
+        white-space: nowrap;
+        font-weight: 600;
+        color: @titleColor;
+        font-size: 14px;
+        line-height: 18px;
+        padding: 0;
+        margin-bottom: 8px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+      .desc {
+        font-weight: 300;
+        color: @textColor;
+        line-height: 18px;
+        font-size: 12px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        min-height: 18px;
+      }
+    }
+    .line {
+      margin: 21px 20px;
+      height: 14px;
+      width: 1px;
+      min-width: 1px;
+      background-color: @lineColor;
+    }
+    .left {
+      width: 100%;
+      line-height: 56px;
+    }
+    .right {
+      word-break: keep-all;
+      line-height: 56px;
+    }
+  }
+}

@@ -1,0 +1,33 @@
+@import './theme.less';
+
+/* 颜色 */
+:global(.ant-btn) {
+  background-color: #fff;
+  color: @subPrimaryColor;
+  border-color: @subPrimaryBorderColor;
+  &:hover {
+    background-color: #fff;
+    color: @subPrimaryHoverColor;
+    border-color: @subPrimaryHoverColor;
+  }
+  &:focus {
+    background-color: #fff;
+    color: @subPrimaryFucosColor;
+    border-color: @subPrimaryFucosColor;
+  }
+}
+:global(.ant-btn-primary) {
+  background-color: @primaryColor;
+  border-color: @primaryColor;
+  color: #fff;
+  &:hover {
+    background-color: @primaryHoverColor;
+    border-color: @primaryHoverColor;
+    color: #fff;
+  }
+  &:focus {
+    background-color: @primaryFucosColor;
+    border-color: @primaryFucosColor;
+    color: #fff;
+  }
+}

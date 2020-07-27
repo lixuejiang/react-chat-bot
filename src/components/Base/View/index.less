@@ -1,0 +1,16 @@
+@import '../Less/theme.less';
+
+.container {
+  min-width: @minBodyWidth;
+  max-width: @maxBodyWidth;
+  // padding: 0 @spaceWidth;
+  padding: 0 40px;
+  margin: 0 auto;
+  min-height: 100%;
+  padding-bottom: 64px;
+
+  &.resize {
+    min-width: initial;
+    max-width: initial;
+  }
+}

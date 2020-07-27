@@ -1,0 +1,62 @@
+@import '../Less/theme.less';
+
+.container {
+  position: relative;
+  line-height: 32px;
+  height: 32px;
+  width: 228px;
+  input {
+    font-weight: 400;
+    font-size: 14px;
+    color: #333;
+    line-height: 22px;
+    border-color: @lineColor;
+  }
+  .clear {
+    cursor: pointer;
+    width: 14px;
+    height: 14px;
+    margin: 9px;
+    position: absolute;
+    right: 28px;
+    top: 1px;
+    font-size: 0px;
+    padding: 2px;
+    svg {
+      font-size: 20px;
+      vertical-align: top;
+      transform: scale(0.5);
+      transform-origin: 0 0;
+    }
+  }
+  &.canClear {
+    :global(.ant-input-affix-wrapper .ant-input:not(:last-child)) {
+      padding-right: 54px;
+    }
+  }
+  :global(.ant-dropdown) {
+    width: 100%;
+  }
+  .menuItem {
+    font-size: 0;
+    .menuValue, .menuSuffix {
+      display: inline-block;
+      vertical-align: middle;
+      font-size: 14px;
+      width: 50%;
+    }
+    .menuValue {
+      width: 100%;
+      margin-right: -130px;
+      padding-right: 130px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .menuSuffix {
+      text-align: right;
+      width: 130px;
+      color: rgba(0,0,0,0.25);
+    }
+  }
+}

@@ -1,0 +1,56 @@
+._tooltip() {
+  background: rgba(0, 0, 0, .85);
+  border-radius: 2px;
+  padding: 2px 5px;
+  font-size: 12px;
+  color: #fff;
+  max-width: 320px;
+}
+
+.title {
+  ._tooltip();
+
+  position: absolute;
+  z-index: 9000;
+  top: 10px;
+  left: 10px;
+  transition: .2s;
+  transition-property: opacity, visibility;
+  pointer-events: none;
+  display: none;
+
+  &:last-child {
+    display: block;
+  }
+}
+
+.addAnimation {
+  animation: show-hover-title 0.5s linear;
+}
+
+.antdTooltip {
+  &:global(.ant-tooltip) {
+    padding: 0;
+  }
+
+  :global(.ant-tooltip-arrow) {
+    display: none;
+  }
+
+  :global(.ant-tooltip-inner) {
+    ._tooltip();
+    min-height: 0;
+  }
+}
+
+@keyframes show-hover-title {
+  0% {
+    opacity: 0; 
+  }
+  80% {
+    opacity: 0; 
+  }
+  100% {
+    opacity: 1; 
+  } 
+}

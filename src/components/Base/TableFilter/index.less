@@ -1,0 +1,60 @@
+@import '../../../components/Base/Less/theme.less';
+
+.container {
+  max-height: 288px;
+  overflow-y: scroll;
+  &::-webkit-scrollbar {
+    -webkit-appearance: none;
+  }
+  &::-webkit-scrollbar:vertical {
+    width: 8px;
+  }
+  &::-webkit-scrollbar-track {
+    background: #fff;
+  }
+  &::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, .2);
+  }
+  .item {
+    display: flex;
+    position: relative;
+    height: 48px;
+    padding: 0 30px;
+    justify-content: center;
+    align-items: center;
+    font-family: 'PingFangSC-Regular';
+    font-size: 14px;
+    line-height: 20px;
+    color: @textColor;
+  }
+
+  .item:not(:nth-last-of-type(1))::after {
+    content: "";
+    position: absolute;
+    width: calc(100% - 40px);
+    bottom: 0;
+    height: 1px;
+    background: rgba(0, 0, 0, .1);
+  }
+
+  .selected,
+  .item:hover {
+    background: @selectedBackgroundColor;
+  }
+
+  .selected:not(:hover) {
+    // background: rgba(0, 0, 0, .05);
+  }
+  .selected {
+    color: @titleColor;
+  }
+
+  :global(.ant-input-search) {
+    width: 100%;
+    height: 100%;
+  }
+  :global(.ant-input) {
+    border-radius: 0;
+  }
+}

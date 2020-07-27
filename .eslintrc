@@ -1,0 +1,310 @@
+/**
+ * Eslint (JavaScript 和 TypeScript)
+ *
+ * 如果希望在编辑时能实时看到 eslint 效果，需要按照 vscode eslint 插件
+ * 注：eslint 插件默认不会校验 TypeScript 文件，需要在设置中修改：
+ * 将设置（JSON）的 "eslint.validate": [ "javascript", "javascriptreact"]
+ * 后面加上 , "typescript", "typescriptreact"
+ */
+{
+  // TODO 目前 @typescript-eslint/parser 和 babel-eslint 对 jsx 的处理有一些差异，所以 js 还是维持原 parser
+ "parser": "babel-eslint",
+ "plugins": [
+   "@typescript-eslint",
+   "react-ext",
+    "react-hooks"
+  ],
+  "extends": "airbnb",
+  "env": {
+    "browser": true
+  },
+  "parserOptions": {
+    "ecmaFeatures": {
+      "experimentalObjectRestSpread": true
+    }
+  },
+  "settings": {
+    "react": {
+      "pragma": "React", // Pragma to use, default to "React"
+      "version": "detect",
+    },
+  },
+  "rules": {
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "arrow-body-style": [
+      "off"
+    ],
+    "camelcase": [
+      "error",
+      {
+        "properties": "never",
+        "allow": [
+          "^UNSAFE_"
+        ],
+      }
+    ],
+    "consistent-return": [
+      "off"
+    ],
+    "generator-star-spacing": [
+      "off"
+    ],
+    "global-require": [
+      "error"
+    ],
+    "import/extensions": [
+      "off"
+    ],
+    "import/no-extraneous-dependencies": [
+      "off"
+    ],
+    "import/no-unresolved": [
+      "off"
+    ],
+    "import/prefer-default-export": [
+      "off"
+    ],
+    "import/no-cycle": [
+      "off"
+    ],
+    "jsx-a11y/no-static-element-interactions": [
+      "off"
+    ],
+    "no-bitwise": [
+      "off"
+    ],
+    "no-console": [
+      "off"
+    ],
+    "no-else-return": [
+      "off"
+    ],
+    "no-loop-func": [
+      "off"
+    ],
+    "no-nested-ternary": [
+      "off"
+    ],
+    "no-restricted-syntax": [
+      "off"
+    ],
+    "react/forbid-prop-types": [
+      "off"
+    ],
+    "react/jsx-filename-extension": [
+      "off"
+    ],
+    "react/jsx-no-bind": [
+      "error"
+    ],
+    "react/prefer-stateless-function": [
+      "off"
+    ],
+    "react/prop-types": [
+      "off"
+    ],
+    "react/no-unsafe": [
+      "error",
+      {
+        "checkAliases": true
+      }
+    ],
+    "react/no-unused-state": [
+      "warn"
+    ],
+    "react-ext/no-unused-class-property": "warn",
+    "require-yield": [
+      1
+    ],
+    "no-continue": [
+      "off"
+    ],
+    "no-mixed-operators": [
+      "off"
+    ],
+    "no-underscore-dangle": [
+      "off"
+    ],
+    "no-plusplus": [
+      "off"
+    ],
+    "no-unused-expressions": [
+      "off"
+    ],
+    "no-param-reassign": [
+      "off"
+    ],
+    "no-await-in-loop": [
+      "off"
+    ],
+    "no-alert": [
+      "error"
+    ],
+    "no-restricted-globals": [
+      "error",
+      "event"
+    ],
+    "jsx-a11y/click-events-have-key-events": [
+      "off"
+    ],
+    "import/first": [
+      "off"
+    ],
+    "jsx-a11y/anchor-is-valid": [
+      "off"
+    ],
+    "react/require-default-props": [
+      "off"
+    ],
+    "arrow-parens": [
+      "off"
+    ],
+    "react/sort-comp": [
+      "off"
+    ],
+    "function-paren-newline": [
+      "off"
+    ],
+    "prefer-template": [
+      "off"
+    ],
+    "prefer-arrow-callback": [
+      "error",
+      {
+        "allowNamedFunctions": true,
+      }
+    ],
+    "jsx-a11y/media-has-caption": [
+      "off"
+    ],
+    "jsx-a11y/alt-text": [
+      "off"
+    ],
+    "jsx-a11y/anchor-has-content": [
+      "off"
+    ],
+    "jsx-a11y/no-noninteractive-element-interactions": [
+      "off"
+    ],
+    "jsx-a11y/label-has-for": [
+      "off"
+    ],
+    "jsx-a11y/label-has-associated-control": [
+      "off"
+    ],
+    "jsx-a11y/mouse-events-have-key-events": [
+      "off"
+    ],
+    "class-methods-use-this": [
+      "off"
+    ],
+    "react/destructuring-assignment": [
+      "off"
+    ],
+    "operator-linebreak": [
+      "off"
+    ],
+    "max-len": [
+      "error",
+      {
+        "code": 160,
+        "ignoreComments": true
+      }
+    ],
+    "react/button-has-type": [
+      "off"
+    ],
+    "react/no-access-state-in-setstate": [
+      "off"
+    ],
+    "react/jsx-no-target-blank": [
+      "off"
+    ],
+    "react/jsx-one-expression-per-line": [
+      "off"
+    ],
+    "react/no-danger": "off"
+  },
+  "overrides": [
+    {
+      "files": [
+        "**/*.ts",
+        "**/*.tsx"
+      ],
+      "parser": "@typescript-eslint/parser",
+      "parserOptions": {
+        "project": "./tsconfig.json",
+      },
+      "rules": {
+        "import/export": [
+          "off"
+        ], // 这一条不需要
+        // 下面的这些需要禁用，然后启用 @typescript-eslint 下同名的
+        "no-unused-vars": [
+          "off"
+        ],
+        "no-useless-constructor": [
+          "off"
+        ],
+        "camelcase": [
+          "off"
+        ],
+        "indent": [
+          "off"
+        ],
+        "no-empty-function": "off",
+        "@typescript-eslint/no-unused-vars": [
+          "error",
+          {
+            "vars": "all",
+            "args": "none",
+            "ignoreRestSiblings": true,
+          }
+        ],
+        "@typescript-eslint/no-useless-constructor": [
+          "error"
+        ],
+        "@typescript-eslint/camelcase": [
+          "error",
+          {
+            "properties": "never",
+            "allow": [
+              "^UNSAFE_"
+            ],
+          }
+        ],
+        "@typescript-eslint/indent": [
+          "error",
+          2
+        ],
+        "@typescript-eslint/no-empty-function": "error",
+        "@typescript-eslint/array-type": [
+          "error",
+          "array-simple"
+        ],
+        "@typescript-eslint/member-delimiter-style": [
+          "error"
+        ],
+        "@typescript-eslint/type-annotation-spacing": [
+          "error"
+        ],
+        "@typescript-eslint/prefer-for-of": [
+          "error"
+        ],
+        "@typescript-eslint/no-this-alias": [
+          "warn",
+          {
+            "allowDestructuring": true,
+          }
+        ],
+        "@typescript-eslint/prefer-string-starts-ends-with": [
+          "error"
+        ],
+        "@typescript-eslint/prefer-includes": [
+          "error"
+        ],
+      }
+    }
+  ]
+}

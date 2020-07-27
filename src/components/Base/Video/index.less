@@ -1,0 +1,386 @@
+.videoContainer {
+  padding-bottom: 56.25%; 
+  position: relative;
+  background: #000;
+  &.videoFullWindow {
+    position: fixed;
+    z-index: 100000;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    padding: 0;
+  }
+}
+.errorText {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 14px;
+  span {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -30px;
+    margin-top: -7px;
+  }
+}
+.isCanPlay {
+  .loading {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    background-color: rgba(0,0,0,0.5);
+    .rotateLoader {
+      width: 28px;
+      height: 28px;
+      box-sizing: border-box;
+      border: 5px solid #fff;
+      border-top-color: rgba(255, 255, 255, 0.3);
+      border-radius: 50%;
+      position: absolute;
+      top: 45%;
+      margin-top: -14px;
+      left: 50%;
+      margin-left: -14px;
+      animation: loader-rotate 1s linear infinite;
+    }
+
+  }
+}
+.video {
+  position: relative;
+  line-height: 1;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  &.isVideoExpand {
+    top: 1px;
+    bottom: 1px;
+    left: 1px;
+    right: 1px;
+  }
+  &.isPlay {
+    .videoControls {
+      transform: translateY(120%);
+    }
+    &:hover {
+      .videoControls {
+        transform: translateY(0%);
+      }
+    }
+  }
+  video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+  }
+  .volumeBarBtn {
+    float: right;
+    height: 40px;
+    position: relative;
+    width: 60px;
+    .volumeBar {
+      position: absolute;
+      height: 2px;
+      width: 40px;
+      background: rgba(255,255,255,0.4);
+      cursor: pointer;
+      font-size: 0;
+      top: 50%;
+      margin-top: -1px;
+      left: 50%;
+      margin-left: -20px;
+      :global(.ant-slider) {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        z-index: 2;
+      }
+      :global(.ant-slider-rail) {
+        height: 100%;
+        background-color: transparent !important;
+      }
+      :global(.ant-slider-track) {
+        height: 100%;
+        background-color: #458CFF !important;
+        opacity: 0.85;
+      }
+      :global(.ant-slider-step) {
+        height: 100%;
+      }
+      :global(.ant-slider-handle) {
+        margin-top: -1px;
+        width: 4px;
+        height: 4px;
+        margin-left: -2px;
+        transition: transform .3s;
+        border: none;
+        box-shadow: none;
+        transform: scale(1);
+        transform-origin: center;
+        background-color: #458CFF !important;
+      }
+      &:hover:not(.videoProgressDisabled) {
+        :global(.ant-slider-handle) {
+          transform: scale(1.2);
+        }
+      }
+    }
+  }
+  .videoProgress {
+    position: absolute;
+    bottom: 37px;
+    left: 4px;
+    right: 4px;
+    height: 8px;
+    background: transparent;
+    cursor: pointer;
+    font-size: 0;
+    &:after, &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 4px;
+      height: 2px;
+      background: rgba(255,255,255,0.4);
+      top: 3px;
+    }
+    &:before {
+      left: -4px;
+      background-color: #458CFF;
+      opacity: 0.85;
+    }
+    &:after {
+      right: -4px;
+    }
+    &:hover:not(.videoProgressDisabled) {
+      :global(.ant-slider-handle) {
+        transform: scale(1.2);
+      }
+    }
+    .videoProgressLoad {
+      position: absolute;
+      top: 0;
+      height: 100%;
+      /*background: #999;*/
+      z-index: 1;
+    }
+    :global(.ant-slider) {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      z-index: 2;
+    }
+    :global(.ant-slider-rail) {
+      top: 3px;
+      height: 2px;
+      background-color: rgba(255,255,255,0.4) !important;
+    }
+    :global(.ant-slider-track) {
+      top: 3px;
+      height: 2px;
+      background-color: #458CFF !important;
+      opacity: 0.85;
+    }
+    :global(.ant-slider-step) {
+      height: 100%;
+    }
+    :global(.ant-slider-handle) {
+      top: 3px;
+      margin-top: -3px;
+      width: 8px;
+      height: 8px;
+      margin-left: -4px;
+      transition: transform .3s;
+      border: none;
+      box-shadow: none;
+      transform: scale(1);
+      transform-origin: center;
+      background-color: #458CFF !important;
+    }
+  }
+  .videoControls {
+    width: 100%;
+    font-size: 0;
+    position: absolute;
+    bottom: 0px;
+    background-color: rgba(0, 0, 0, 0.25);
+    user-select: none;
+    transition: transform .3s;
+    .videoPlayBtn {
+      display: inline-block;
+      vertical-align: middle;
+      width: 40px;
+      height: 40px;
+      position: relative;
+      cursor: pointer;
+      img {
+        transition: opacity 0.3s;
+        position: absolute;
+        top: 50%;
+        margin-top: -9px;
+        left: 50%;
+        margin-left: -7px;
+        opacity: 0.65;
+      }
+      &:hover {
+        img { opacity: 1; }
+      }
+    }
+    .videoTimes {
+      display: inline-block;
+      vertical-align: middle;
+      font-family: HelveticaNeue;
+      font-size: 12px;
+      color: rgba(255,255,255,0.65);
+      text-align: left;
+      padding-left: 8px;
+      line-height: 40px;
+      .videoNowTime {
+      }
+      .videoAllTimes {
+      }
+    }
+    .resolutionPanel {
+      background: rgba(0,0,0,0.65);
+      position: absolute;
+      width: 60px;
+      margin-left: -30px;
+      left: 50%;
+      bottom: 56px;
+      padding: 7px 0;
+      border-radius: 4px;
+      .resolutionItem {
+        opacity: 0.65;
+        font-weight: 400;
+        font-size: 12px;
+        color: rgba(255, 255, 255, 0.85);
+        line-height: 20px;
+        padding: 3px 8px;
+        cursor: pointer;
+        transition: all .3s;
+        &:hover {
+          color: #4285F4;
+        }
+      }
+    }
+    .settingPanel {
+      background: rgba(0,0,0,0.65);
+      width: 232px;
+      position: absolute;
+      right: 12px;
+      bottom: 56px;
+      padding: 16px;
+      border-radius: 4px;
+      .playBackRateBox {
+        .playBackRateDesc {
+          font-weight: 400;
+          font-size: 12px;
+          color: rgba(255,255,255,0.85);
+          text-align: left;
+          line-height: 20px;
+        }
+        :global(.ant-slider-with-marks) {
+          margin-bottom: 14px;
+          margin-top: 28px;
+        }
+        :global(.ant-slider-mark) {
+          top: -24px;
+        }
+        :global(.ant-slider-mark-text),
+        :global(.ant-slider-mark-text-active) {
+          opacity: 0.65;
+          font-weight: 400;
+          font-size: 12px;
+          color: rgba(255,255,255,0.85);
+          line-height: 20px;
+        }
+        :global(.ant-slider-handle) {
+          margin-top: -5px;
+          width: 12px;
+          height: 12px;
+          margin-left: -6px;
+          transition: transform .3s;
+          border: none;
+          box-shadow: none;
+          transform: scale(1);
+          transform-origin: center;
+          background-color: #458CFF !important;
+        }
+        &:hover:not(.videoProgressDisabled) {
+          :global(.ant-slider-handle) {
+            transform: scale(1.2);
+          }
+        }
+        :global(.ant-slider-rail) {
+          height: 2px;
+          background-color: #706f6f;
+        }
+        :global(.ant-slider-step) {
+          height: 2px;
+        }
+        :global(.ant-slider-dot) {
+          border-radius: 0;
+          border: none;
+          width: 2px;
+          height: 6px;
+          background-color: #706f6f;
+          margin-left: -1px;
+        }
+      }
+    }
+    .videoBarBtn {
+      width: 40px;
+      height: 40px;
+      position: relative;
+      color: #c7c7c7;
+      font-size: 16px;
+      float: right;
+      line-height: 40px;
+      text-align: center;
+      cursor: pointer;
+      transition: color 0.3s;
+      img {
+        transition: opacity 0.3s;
+        position: absolute;
+        top: 50%;
+        margin-top: -9px;
+        left: 50%;
+        margin-left: -9px;
+        opacity: 0.65;
+      }
+      span {
+        font-size: 12px;
+        color: #fff;
+        opacity: 0.65;
+      }
+      &:hover {
+        img { opacity: 1; }
+        span { opacity: 1; }
+      }
+    }
+  }
+}
+@keyframes loader-rotate {
+  0% {
+    transform: rotate(0); 
+  }
+  100% {
+    transform: rotate(360deg); 
+  } 
+}
+

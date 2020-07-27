@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55 (78076) - https://sketchapp.com -->
+    <title>部门订阅</title>
+    <desc>Created with Sketch.</desc>
+    <g id="部门订阅" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M4,2.5 C3.17157288,2.5 2.5,3.17157288 2.5,4 L2.5,13.966922 C2.5,14.1700621 2.54126162,14.3710856 2.62128245,14.5578009 C2.94761589,15.3192456 3.82943427,15.6719729 4.59087895,15.3456395 L9,13.4560162 L13.4091211,15.3456395 C13.5958363,15.4256603 13.7968598,15.466922 14,15.466922 C14.8284271,15.466922 15.5,14.7953491 15.5,13.966922 L15.5,4 C15.5,3.17157288 14.8284271,2.5 14,2.5 L4,2.5 Z" id="矩形备份-19" stroke-opacity="0.45" stroke="#000000"></path>
+        <g id="编组" transform="translate(6.500000, 5.500000)" stroke="#979797" stroke-linecap="round">
+            <path d="M0,2.5 L5,2.5" id="直线-5"></path>
+            <path d="M0,2.5 L5,2.5" id="直线-5备份" transform="translate(2.500000, 2.500000) rotate(-90.000000) translate(-2.500000, -2.500000) "></path>
+        </g>
+    </g>
+</svg>

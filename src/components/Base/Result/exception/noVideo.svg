@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="120px" height="100px" viewBox="0 0 120 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>ic_1</title>
+    <desc>Created with Sketch.</desc>
+    <g id="ic_1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-Copy" transform="translate(0.000000, 1.000000)">
+            <path d="M105.917064,88.0650212 C106.276723,88.0618905 106.287756,87.5302456 106.469682,87.2603375 C112.487321,78.332468 116,67.5764491 116,56 C116,25.072054 90.927946,0 60,0 C29.072054,0 4,25.072054 4,56 C4,67.3915424 7.40136174,77.9886542 13.2438867,86.831137 C13.5513915,87.296536 13.5520613,88.1779204 14.1865481,88.2126124 C46.8764058,90 88.9613478,88.2126124 105.917064,88.0650212 Z" id="Oval" fill="#F2F9FF"></path>
+            <path d="M28.2200813,4.39631566 C30.9360877,4.81010876 32.6027544,5.81010876 33.2200813,7.39631566 C34.3417258,5.81010876 36.0083924,4.81010876 38.2200813,4.39631566" id="Line-6" stroke="#4D7BB3" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" transform="translate(33.220081, 5.896316) rotate(-17.000000) translate(-33.220081, -5.896316) "></path>
+            <path d="M38.4401627,8.79263132 C41.1561691,9.20642442 42.8228357,10.2064244 43.4401627,11.7926313 C44.5618071,10.2064244 46.2284738,9.20642442 48.4401627,8.79263132" id="Line-6-Copy" stroke="#4D7BB3" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" transform="translate(43.440163, 10.292631) rotate(-17.000000) translate(-43.440163, -10.292631) "></path>
+            <path d="M21,30 L21,38 L45.322967,38 L48.522967,30 L21,30 Z" id="Rectangle" stroke="#5E8DC6" stroke-width="2" fill="#FFFFFF"></path>
+            <path d="M53.2,30 L50,38 L62.8459341,38 L66.0459341,30 L53.2,30 Z" id="Rectangle-Copy" stroke="#5E8DC6" stroke-width="2" fill="#FFFFFF"></path>
+            <path d="M71.2,30 L68,38 L80.8459341,38 L84.0459341,30 L71.2,30 Z" id="Rectangle-Copy-2" stroke="#5E8DC6" stroke-width="2" fill="#FFFFFF"></path>
+            <path d="M89.2,30 L86,38 L98.522967,38 L98.522967,30 L89.2,30 Z" id="Rectangle-Copy-3" stroke="#5E8DC6" stroke-width="2" fill="#FFFFFF"></path>
+            <g id="Group-5" transform="translate(0.000000, 87.000000)" opacity="0.429999977" stroke="#4D7BB3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                <path d="M18,1 L106.281381,1" id="Line-2"></path>
+                <path d="M0.811775674,1 L14,1" id="Line-2-Copy"></path>
+                <path d="M109.811776,1 L119.74553,1" id="Line-2-Copy-2"></path>
+            </g>
+            <path d="M21,44 L21,81 C21,84.8659932 24.1340068,88 28,88 L92,88 C95.8659932,88 99,84.8659932 99,81 L99,44 L21,44 Z" id="Path" stroke="#5E8DC6" stroke-width="2" fill="#FFFFFF"></path>
+            <path d="M25,48.8037603 C25,48.3598557 25.4029437,48 25.9,48 L94.1,48 C94.5970563,48 95,48.3598557 95,48.8037603 L95,77.5699177 C95,81.1211541 92.7764502,84 88.8,84 L31.2,84 C27.2235498,84 25,81.1211541 25,77.5699177 L25,62.504807 L25,48.8037603 Z" id="Path-Copy" fill="#DCEEFF"></path>
+            <path d="M65.4961509,58.9414507 L73.7591167,71.3358994 C74.6781741,72.7144855 74.3056525,74.5770935 72.9270664,75.4961509 C72.4342639,75.8246859 71.8552408,76 71.2629658,76 L54.7370342,76 C53.0801799,76 51.7370342,74.6568542 51.7370342,73 C51.7370342,72.407725 51.9123483,71.828702 52.2408833,71.3358994 L60.5038491,58.9414507 C61.4229065,57.5628646 63.2855145,57.190343 64.6641006,58.1094004 C64.9936575,58.329105 65.2764463,58.6118938 65.4961509,58.9414507 Z" id="Triangle-Copy" stroke="#FFFFFF" stroke-width="2" fill="#6DAAFD" transform="translate(63.000000, 66.000000) rotate(-270.000000) translate(-63.000000, -66.000000) "></path>
+            <path d="M26.8117757,98 L33.1515974,98" id="Line-2-Copy-4" stroke="#4D7BB3" stroke-width="2" opacity="0.429999977" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M37.8117757,98 L48.1841026,98 C49.3193341,96.4287493 50.4187667,95.643124 51.4824001,95.643124 C52.5460336,95.643124 53.5745585,96.4287493 54.5679749,98 L70,98" id="Line-2-Copy-6" stroke="#4D7BB3" stroke-width="2" opacity="0.429999977" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M81.8117757,98 L88.1515974,98" id="Line-2-Copy-5" stroke="#4D7BB3" stroke-width="2" opacity="0.429999977" stroke-linecap="round" stroke-linejoin="round"></path>
+        </g>
+    </g>
+</svg>
