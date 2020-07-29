@@ -56,20 +56,6 @@ export default class Demo extends Component<IDemoProps, IDemoState> {
     });
   }
 
-  _onFilesSelected = (fileList: any) => {
-    const objectURL = window.URL.createObjectURL(fileList[0]);
-    this.setState({
-      messageList: [...this.state.messageList, {
-        type: 'file',
-        author: 'me',
-        data: {
-          url: objectURL,
-          fileName: fileList[0].name,
-        },
-      }],
-    });
-  }
-
   _sendMessage = (text: any) => {
     if (text.length > 0) {
       const newMessagesCount = this.state.isOpen ? this.state.newMessagesCount : this.state.newMessagesCount + 1;
@@ -84,7 +70,7 @@ export default class Demo extends Component<IDemoProps, IDemoState> {
     }
   }
 
-  _handleClick = () => {
+  handleClose = () => {
     this.setState({
       isOpen: !this.state.isOpen,
       newMessagesCount: 0,
@@ -96,16 +82,14 @@ export default class Demo extends Component<IDemoProps, IDemoState> {
       <div>
         <ChatBot
           agentProfile={{
-            teamName: 'react-chat-window',
+            teamName: '智能对话机器人',
             imageUrl: 'https://a.slack-edge.com/66f9/img/avatars-teams/ava_0001-34.png',
           }}
           onMessageWasSent={this._onMessageWasSent}
-          onFilesSelected={this._onFilesSelected}
           messageList={this.state.messageList}
           newMessagesCount={this.state.newMessagesCount}
-          handleClick={this._handleClick}
+          onClose={this.handleClose}
           isOpen={this.state.isOpen}
-          showEmoji
         />
       </div>
     );

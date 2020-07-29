@@ -1,26 +1,23 @@
 import React, { Component } from 'react';
 import ChatWindow from './ChatWindow';
-import launcherIcon from './assets/logo-no-bg.svg';
-import launcherIconActive from './assets/close-icon.png';
-import styles from './styles/launcher.less';
+import ChatBotIcon from './assets/chat.gif';
+import styles from './styles/index.less';
 
-interface ILauncherProps {
+interface IChatBotProps {
   // onMessageWasReceived: (activeKey: string) => void;
-  onMessageWasSent: (activeKey: string) => void;
-  onFilesSelected: (fileList: any) => void;
+  onMessageWasSent: (text: string) => void;
   newMessagesCount: number;
   isOpen: boolean;
-  handleClick: () => void;
+  onClose: () => void;
   messageList: any[];
-  showEmoji: boolean;
   agentProfile: any;
 }
 
-interface ILauncherState {
+interface IChatBotState {
   isOpen: boolean;
 }
 
-class Launcher extends Component<ILauncherProps, ILauncherState> {
+class ChatBot extends Component<IChatBotProps, IChatBotState> {
   constructor(props: any) {
     super(props);
     this.state = {
@@ -28,9 +25,9 @@ class Launcher extends Component<ILauncherProps, ILauncherState> {
     };
   }
 
-  handleClick = () => {
-    if (this.props.handleClick !== undefined) {
-      this.props.handleClick();
+  handleClose = () => {
+    if (this.props.onClose !== undefined) {
+      this.props.onClose();
     } else {
       this.setState({
         isOpen: !this.state.isOpen,
@@ -46,32 +43,19 @@ class Launcher extends Component<ILauncherProps, ILauncherState> {
     ];
     return (
       <div id="sc-launcher">
-        <div className={classList.join(' ')} onClick={this.handleClick.bind(this)}>
-          <MessageCount count={this.props.newMessagesCount} isOpen={isOpen} />
-          <img className={styles['sc-open-icon']} src={launcherIconActive} />
-          <img className={styles['sc-closed-icon']} src={launcherIcon} />
+        <div className={classList.join(' ')} onClick={this.handleClose}>
+          <img className={styles['sc-open-icon']} src={ChatBotIcon} />
         </div>
         <ChatWindow
           messageList={this.props.messageList}
           onUserInputSubmit={this.props.onMessageWasSent}
-          onFilesSelected={this.props.onFilesSelected}
           agentProfile={this.props.agentProfile}
           isOpen={isOpen}
-          onClose={this.handleClick}
-          showEmoji={this.props.showEmoji}
+          onClose={this.handleClose}
         />
       </div>
     );
   }
 }
 
-const MessageCount = (props: any) => {
-  if (props.count === 0 || props.isOpen === true) { return null; }
-  return (
-    <div className={styles['sc-new-messages-count']}>
-      {props.count}
-    </div>
-  );
-};
-
-export default Launcher;
+export default ChatBot;

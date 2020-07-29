@@ -9,18 +9,12 @@ interface IChatWindowProps {
   agentProfile: any;
   isOpen: boolean;
   onClose: () => void;
-  onFilesSelected: (filesList: any) => void;
-  onUserInputSubmit: (message: string) => void;
-  showEmoji: boolean;
+  onUserInputSubmit: (message: any) => void;
 }
 
 class ChatWindow extends Component<IChatWindowProps> {
-  onUserInputSubmit = (message: string) => {
+  onUserInputSubmit = (message: any) => {
     this.props.onUserInputSubmit(message);
-  }
-
-  onFilesSelected = (filesList: any) => {
-    this.props.onFilesSelected(filesList);
   }
 
   render() {
@@ -42,8 +36,6 @@ class ChatWindow extends Component<IChatWindowProps> {
         />
         <UserInput
           onSubmit={this.onUserInputSubmit}
-          onFilesSelected={this.onFilesSelected}
-          showEmoji={this.props.showEmoji}
         />
       </div>
     );
